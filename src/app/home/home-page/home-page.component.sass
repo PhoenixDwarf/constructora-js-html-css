@@ -22,6 +22,9 @@ main article:hover
 
 main article:hover a
     visibility: visible
+    
+main article a 
+    text-decoration: none
 
 article a
     position: relative
@@ -38,3 +41,46 @@ article a:hover
 
 nav > div > img
     cursor: pointer
+
+.fixed-menu-icon, .fixed-menu-icon:hover, .fixed-menu-icon:active
+    background-color: var(--theme-blue) !important
+
+.fixed-menu-icon
+    right: 0
+    color: white
+    padding: 10px 10px
+    font-size: 16px
+    border-top-right-radius: 0px
+    border-bottom-right-radius: 0px
+
+.fixed-menu-icon span
+    padding-left: 10px
+    font-size: 16px
+
+@media (max-width: 1999px)
+    .navbar-toggle
+        flex: 0 0 auto
+        width: 41.66666667%
+
+@media (max-width: 991px)
+    .navbar-toggle
+        flex: 0 0 auto
+        width: 50%
+    nav.navbar
+        height: 420px
+
+@media (max-width: 767px)
+    main section
+        justify-content: center
+    main section article 
+        width: 80%
+    nav.navbar
+        height: 320px
+    article a
+        font-size: 2vw
+
+@media (max-width: 575px)
+    main section article 
+        width: 90%
+    nav.navbar
+        height: 220px

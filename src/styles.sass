@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+:root
+    --theme-blue: #14193E
+    
 li
     list-style: none
 
@@ -10,3 +13,41 @@ li a
 a:hover
     color: white
     text-decoration: underline
+
+.modal-content
+    width: auto
+
+.modal-dialog-centered
+    justify-content: center
+
+body
+    overflow: visible !important
+    padding: 0 !important
+
+.fixed-menu-icon
+    display: none !important
+    position: fixed
+    right: 20px
+    top: 12px
+    color: white
+    font-size: 28px
+    background-color: transparent
+    border: none
+    z-index: 101
+
+.fixed-menu-icon:hover, .fixed-menu-icon:active
+    background-color: transparent !important
+
+.offcanvas
+    background-color: var(--theme-blue)
+    color: white
+
+.offcanvas-header .btn-close
+    background-color: white
+
+@media (max-width: 767px)
+    .navbar-toggle
+        display: none !important
+
+    .fixed-menu-icon
+        display: inline-block !important
