@@ -1,7 +1,7 @@
 footer
     width: 100%
     min-height: 166px
-    background-color: #14193E
+    background-color: var(--theme-blue)
 
 div.col-4
     color: white
@@ -17,3 +17,12 @@ span.spacer
 
 em
     font-size: 20px
+
+@media (max-width: 767px)
+    footer > div > div.row
+        flex-direction: column
+        align-items: center
+        padding-bottom: 16px
+    
+    footer > div > div.row div
+        width: 100%
